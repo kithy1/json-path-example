@@ -41,7 +41,7 @@ public class MainController {
     }
 
     @GetMapping("/first-name")
-    public Mono<List<Object>> getPatientFirstName(@RequestBody String json){
+    public Mono<List<String>> getPatientFirstName(@RequestBody String json){
         return patientResourceJsonParser.readFirstName(json);
     }
 
